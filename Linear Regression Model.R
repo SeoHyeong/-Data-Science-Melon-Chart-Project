@@ -8,8 +8,8 @@ df_eda <- df %>% dplyr::select(genre, label, positive:trust, num_words, lexical_
 
 # mutating count to percent
 df_eda$label <- as.character(df_eda$label)
-df_eda$label[df_eda$label == "开林青 YES"] <- 1
-df_eda$label[df_eda$label == "开林青 NO"] <- 0
+df_eda$label[df_eda$label == "驴陋脕脰脟脿 YES"] <- 1
+df_eda$label[df_eda$label == "驴陋脕脰脟脿 NO"] <- 0
 
 df_eda <- df_eda %>% mutate(sum = anger + anticipation + fear + joy + sadness + surprise + trust)
 df_eda <- df_eda %>% mutate(anger = anger / sum)
