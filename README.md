@@ -12,6 +12,8 @@ Data was crawled from Korean music streaming website: https://www.melon.com/
 
 I was able to complete the code by help of this posting(http://baekse.me/Melon-Chart-Crawling/). Refer to this original posting of crawling using Selenium as you wish. 
 
+Note that the main difference is `soup = BeautifulSoup(html, "html.parser")` and `soup = BeautifulSoup(html, "lxml")`. I came across the fact that recent websites are written in lxml format and it cause less trouble to use lxml especially accessing lyric information.
+
 
 ## 2) NRC Lexicon Matching on Korean Lyrics.ipynb
 
