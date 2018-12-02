@@ -5,8 +5,8 @@ library(dplyr)
 df_eda <- df %>% dplyr::select(genre, label, positive:trust, num_words, lexical_density, year, month, top_artist, feat, onair, season, weather, rank_3, times_appear) %>% dplyr::select(-disgust)
 
 df_eda$label <- as.character(df_eda$label)
-df_eda$label[df_eda$label == "¿ªÁÖÇà YES"] <- 1
-df_eda$label[df_eda$label == "¿ªÁÖÇà NO"] <- 0
+df_eda$label[df_eda$label == "ì—­ì£¼í–‰ YES"] <- 1
+df_eda$label[df_eda$label == "ì—­ì£¼í–‰ NO"] <- 0
 
 df_eda <- df_eda %>% mutate(sum = anger + anticipation + fear + joy + sadness + surprise + trust)
 df_eda <- df_eda %>% mutate(anger = anger / sum)
@@ -35,7 +35,7 @@ df_eda <- df_eda %>% dplyr::select(-sum)
 df_eda <- df_eda %>% filter(!is.na(year))
 
 # apply k-prototyps
-kpres <- kproto(df_eda, 4) # 4°³ÀÇ Å¬·¯½ºÅÍ
+kpres <- kproto(df_eda, 4) # 4ê°œì˜ í´ëŸ¬ìŠ¤í„°
 clprofiles(kpres, df_eda)
 
 # Check for the optimal number of clusters given the data
