@@ -28,12 +28,12 @@ Here, I included EDA and visualization on Dataset created at step 2. You can ref
 This blog (https://junhewk.github.io/text/) helped me out alot. 
 
 
-## 4) linear regression model.R
+## 4) Linear Regression Model.R
 
 Taking `df.csv` as an input, I carry out linear regression analysis.
 
 
-## 5) k-prototype clustering.R
+## 5) K-prototype Clustering.R
 
 Taking `df.csv` as an input as well, k-prototpye clustering was done to group similar musics. K-prototype clustering is a combination of traditional K-means and K-mode. It is used to clustering data cases that have both numerical and categorical variables. 
 
