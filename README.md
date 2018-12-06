@@ -43,4 +43,4 @@ Take a loot at these paper if you're interested in math used in K-prototype algo
 
 ## Word2Vec
 
-I'll upload Word2Vec analysis carried out in python to this folder. (will be updated)
+I'll upload Word2Vec analysis carried out in python to this folder. Word2Vec analysis will take `df.csv` as an input dataframe. (will be updated)
